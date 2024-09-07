@@ -26,9 +26,9 @@ enum CellMode {
 }
 
 class ViewController: UIViewController {
-    let testMiniApp = AppViewController()
-    let testMiniApp2 = AppViewController()
-    let testMiniApp3 = AppViewController()
+    let testMiniApp = CryptoExchangeRate(coin: .btc)
+    let testMiniApp2 = CryptoExchangeRate(coin: .eth)
+    let testMiniApp3 = CryptoExchangeRate(coin: .ton)
     let testMiniApp4 = AppViewController()
     let testMiniApp5 = AppViewController()
     let testMiniApp6 = AppViewController()
@@ -37,11 +37,7 @@ class ViewController: UIViewController {
     let testMiniApp9 = AppViewController()
     let testMiniApp10 = AppViewController()
     let testMiniApp11 = AppViewController()
-    let testMiniApp12 = AppViewController()
-    let testMiniApp13 = AppViewController()
-    let testMiniApp14 = AppViewController()
-    let testMiniApp15 = AppViewController()
-    let testMiniApp16 = AppViewController()
+    
     var apps = [UIViewController]()
     
     private let tableView = UITableView()
@@ -61,13 +57,11 @@ class ViewController: UIViewController {
         apps.append(testMiniApp9)
         apps.append(testMiniApp10)
         apps.append(testMiniApp11)
-        apps.append(testMiniApp12)
-        apps.append(testMiniApp13)
-        apps.append(testMiniApp14)
-        apps.append(testMiniApp15)
-        apps.append(testMiniApp16)
+        
         
         setupLayout()
+        
+        
     }
     //MARK: - Methods
     @objc private func swapMode() {
@@ -132,6 +126,8 @@ extension ViewController {
         tableView.register(AppCell.self, forCellReuseIdentifier: "Cell")
         tableView.separatorColor = .systemBlue
         tableView.backgroundColor = .clear
+        tableView.showsVerticalScrollIndicator = false
+        tableView.showsHorizontalScrollIndicator = false
         tableView.rowHeight = view.bounds.height / 11
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -164,7 +160,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! AppCell
         let app = apps[indexPath.row]
         cell.configure(miniApp: app)
-        
+        cell.selectionStyle = .none
         switch mode {
         case .closed:
             cell.fullscreenButton.isHidden = true

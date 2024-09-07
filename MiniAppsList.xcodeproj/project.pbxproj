@@ -16,6 +16,9 @@
 		9FC2C3252C8A1DBA004A0405 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3242C8A1DBA004A0405 /* AppViewController.swift */; };
 		9FC2C3272C8B42C5004A0405 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3262C8B42C5004A0405 /* AppCell.swift */; };
 		9FC2C3292C8B4B34004A0405 /* UIButton + Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3282C8B4B34004A0405 /* UIButton + Extended.swift */; };
+		9FC2C32D2C8C99B9004A0405 /* CryptoExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C32C2C8C99B9004A0405 /* CryptoExchangeRate.swift */; };
+		9FC2C3302C8C9BE4004A0405 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C32F2C8C9BE4004A0405 /* APICaller.swift */; };
+		9FC2C3322C8CA096004A0405 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3312C8CA096004A0405 /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		9FC2C3242C8A1DBA004A0405 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		9FC2C3262C8B42C5004A0405 /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 		9FC2C3282C8B4B34004A0405 /* UIButton + Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extended.swift"; sourceTree = "<group>"; };
+		9FC2C32C2C8C99B9004A0405 /* CryptoExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoExchangeRate.swift; sourceTree = "<group>"; };
+		9FC2C32F2C8C9BE4004A0405 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		9FC2C3312C8CA096004A0405 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +68,53 @@
 		9FA16BF82C88B06400A83CC6 /* MiniAppsList */ = {
 			isa = PBXGroup;
 			children = (
-				9FA16BF92C88B06400A83CC6 /* AppDelegate.swift */,
-				9FA16BFB2C88B06400A83CC6 /* SceneDelegate.swift */,
-				9FA16BFD2C88B06400A83CC6 /* ViewController.swift */,
-				9FC2C3282C8B4B34004A0405 /* UIButton + Extended.swift */,
-				9FC2C3262C8B42C5004A0405 /* AppCell.swift */,
-				9FC2C3202C88B3BC004A0405 /* PopUpViewController.swift */,
+				9FC2C3382C8D038F004A0405 /* App */,
+				9FC2C3372C8D0372004A0405 /* Resourses */,
+				9FC2C3362C8D034B004A0405 /* Views */,
+				9FC2C32E2C8C99CB004A0405 /* CryptoExchangeRate */,
 				9FC2C3242C8A1DBA004A0405 /* AppViewController.swift */,
-				9FA16C022C88B06700A83CC6 /* Assets.xcassets */,
-				9FA16C042C88B06700A83CC6 /* LaunchScreen.storyboard */,
 				9FA16C072C88B06700A83CC6 /* Info.plist */,
 			);
 			path = MiniAppsList;
+			sourceTree = "<group>";
+		};
+		9FC2C32E2C8C99CB004A0405 /* CryptoExchangeRate */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2C32C2C8C99B9004A0405 /* CryptoExchangeRate.swift */,
+				9FC2C32F2C8C9BE4004A0405 /* APICaller.swift */,
+				9FC2C3312C8CA096004A0405 /* Model.swift */,
+			);
+			path = CryptoExchangeRate;
+			sourceTree = "<group>";
+		};
+		9FC2C3362C8D034B004A0405 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2C3202C88B3BC004A0405 /* PopUpViewController.swift */,
+				9FC2C3262C8B42C5004A0405 /* AppCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9FC2C3372C8D0372004A0405 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2C3282C8B4B34004A0405 /* UIButton + Extended.swift */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		9FC2C3382C8D038F004A0405 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				9FA16BF92C88B06400A83CC6 /* AppDelegate.swift */,
+				9FA16BFB2C88B06400A83CC6 /* SceneDelegate.swift */,
+				9FA16BFD2C88B06400A83CC6 /* ViewController.swift */,
+				9FA16C042C88B06700A83CC6 /* LaunchScreen.storyboard */,
+				9FA16C022C88B06700A83CC6 /* Assets.xcassets */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,6 +133,8 @@
 			dependencies = (
 			);
 			name = MiniAppsList;
+			packageProductDependencies = (
+			);
 			productName = MiniAppsList;
 			productReference = 9FA16BF62C88B06400A83CC6 /* MiniAppsList.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +163,8 @@
 				Base,
 			);
 			mainGroup = 9FA16BED2C88B06400A83CC6;
+			packageReferences = (
+			);
 			productRefGroup = 9FA16BF72C88B06400A83CC6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +194,9 @@
 				9FC2C3252C8A1DBA004A0405 /* AppViewController.swift in Sources */,
 				9FA16BFE2C88B06400A83CC6 /* ViewController.swift in Sources */,
 				9FC2C3292C8B4B34004A0405 /* UIButton + Extended.swift in Sources */,
+				9FC2C32D2C8C99B9004A0405 /* CryptoExchangeRate.swift in Sources */,
+				9FC2C3302C8C9BE4004A0405 /* APICaller.swift in Sources */,
+				9FC2C3322C8CA096004A0405 /* Model.swift in Sources */,
 				9FA16BFA2C88B06400A83CC6 /* AppDelegate.swift in Sources */,
 				9FC2C3272C8B42C5004A0405 /* AppCell.swift in Sources */,
 				9FA16BFC2C88B06400A83CC6 /* SceneDelegate.swift in Sources */,
@@ -301,8 +349,7 @@
 				INFOPLIST_FILE = MiniAppsList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -333,8 +380,7 @@
 				INFOPLIST_FILE = MiniAppsList/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

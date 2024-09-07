@@ -63,7 +63,7 @@ extension AppCell {
         
         NSLayoutConstraint.activate([
             fullscreenButton.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -20),
-            fullscreenButton.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+            fullscreenButton.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 20)
         ])
     }
     private func setupBarrierView() {
