@@ -7,15 +7,14 @@
 
 import UIKit
 
-
 class PopUpViewController: UIViewController {
-    // MARK: - Properties
+    //MARK: - Properties
     private lazy var contentView = UIView()
     private lazy var popUpView = UIView()
     private lazy var closeButton = ExtendedHitButton(type: .close)
     weak var delegate: PopUpViewControllerDelegate?
 
-    // MARK: - Init
+    //MARK: - Init
     init(contentView: UIView) {
         super.init(nibName: nil, bundle: nil)
         self.contentView = contentView

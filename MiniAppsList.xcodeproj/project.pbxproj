@@ -13,7 +13,6 @@
 		9FA16C032C88B06700A83CC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FA16C022C88B06700A83CC6 /* Assets.xcassets */; };
 		9FA16C062C88B06700A83CC6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9FA16C042C88B06700A83CC6 /* LaunchScreen.storyboard */; };
 		9FC2C3212C88B3BC004A0405 /* PopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3202C88B3BC004A0405 /* PopUpViewController.swift */; };
-		9FC2C3252C8A1DBA004A0405 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3242C8A1DBA004A0405 /* AppViewController.swift */; };
 		9FC2C3272C8B42C5004A0405 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3262C8B42C5004A0405 /* AppCell.swift */; };
 		9FC2C3292C8B4B34004A0405 /* UIButton + Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3282C8B4B34004A0405 /* UIButton + Extended.swift */; };
 		9FC2C32D2C8C99B9004A0405 /* CryptoExchangeMiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C32C2C8C99B9004A0405 /* CryptoExchangeMiniApp.swift */; };
@@ -22,6 +21,10 @@
 		9FC2C33B2C8DC812004A0405 /* APIWeatherColler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C33A2C8DC812004A0405 /* APIWeatherColler.swift */; };
 		9FC2C33D2C8DC89E004A0405 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C33C2C8DC89E004A0405 /* WeatherModel.swift */; };
 		9FC2C33F2C8DCD6D004A0405 /* WeatherMiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C33E2C8DCD6D004A0405 /* WeatherMiniApp.swift */; };
+		9FC2C3422C8DFFBA004A0405 /* WordleMiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3412C8DFFBA004A0405 /* WordleMiniApp.swift */; };
+		9FC2C3442C8DFFDC004A0405 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3432C8DFFDC004A0405 /* KeyboardViewController.swift */; };
+		9FC2C3462C8DFFF3004A0405 /* BoardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3452C8DFFF3004A0405 /* BoardViewController.swift */; };
+		9FC2C3482C8E0008004A0405 /* KeyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3472C8E0008004A0405 /* KeyCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +36,6 @@
 		9FA16C052C88B06700A83CC6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9FA16C072C88B06700A83CC6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9FC2C3202C88B3BC004A0405 /* PopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpViewController.swift; sourceTree = "<group>"; };
-		9FC2C3242C8A1DBA004A0405 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		9FC2C3262C8B42C5004A0405 /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 		9FC2C3282C8B4B34004A0405 /* UIButton + Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extended.swift"; sourceTree = "<group>"; };
 		9FC2C32C2C8C99B9004A0405 /* CryptoExchangeMiniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoExchangeMiniApp.swift; sourceTree = "<group>"; };
@@ -42,6 +44,10 @@
 		9FC2C33A2C8DC812004A0405 /* APIWeatherColler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWeatherColler.swift; sourceTree = "<group>"; };
 		9FC2C33C2C8DC89E004A0405 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		9FC2C33E2C8DCD6D004A0405 /* WeatherMiniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMiniApp.swift; sourceTree = "<group>"; };
+		9FC2C3412C8DFFBA004A0405 /* WordleMiniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordleMiniApp.swift; sourceTree = "<group>"; };
+		9FC2C3432C8DFFDC004A0405 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		9FC2C3452C8DFFF3004A0405 /* BoardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewController.swift; sourceTree = "<group>"; };
+		9FC2C3472C8E0008004A0405 /* KeyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,7 +85,7 @@
 				9FC2C3362C8D034B004A0405 /* Views */,
 				9FC2C32E2C8C99CB004A0405 /* CryptoExchange */,
 				9FC2C3392C8DC7E7004A0405 /* WeatherMiniApp */,
-				9FC2C3242C8A1DBA004A0405 /* AppViewController.swift */,
+				9FC2C3402C8DFF9A004A0405 /* WordleMiniApp */,
 				9FA16C072C88B06700A83CC6 /* Info.plist */,
 			);
 			path = MiniAppsList;
@@ -132,6 +138,17 @@
 				9FC2C33C2C8DC89E004A0405 /* WeatherModel.swift */,
 			);
 			path = WeatherMiniApp;
+			sourceTree = "<group>";
+		};
+		9FC2C3402C8DFF9A004A0405 /* WordleMiniApp */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2C3412C8DFFBA004A0405 /* WordleMiniApp.swift */,
+				9FC2C3432C8DFFDC004A0405 /* KeyboardViewController.swift */,
+				9FC2C3452C8DFFF3004A0405 /* BoardViewController.swift */,
+				9FC2C3472C8E0008004A0405 /* KeyCell.swift */,
+			);
+			path = WordleMiniApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,15 +225,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9FC2C3252C8A1DBA004A0405 /* AppViewController.swift in Sources */,
+				9FC2C3482C8E0008004A0405 /* KeyCell.swift in Sources */,
+				9FC2C3442C8DFFDC004A0405 /* KeyboardViewController.swift in Sources */,
 				9FA16BFE2C88B06400A83CC6 /* ViewController.swift in Sources */,
 				9FC2C3292C8B4B34004A0405 /* UIButton + Extended.swift in Sources */,
 				9FC2C33B2C8DC812004A0405 /* APIWeatherColler.swift in Sources */,
 				9FC2C32D2C8C99B9004A0405 /* CryptoExchangeMiniApp.swift in Sources */,
 				9FC2C3302C8C9BE4004A0405 /* APICoinbaseCaller.swift in Sources */,
 				9FC2C3322C8CA096004A0405 /* CoinModel.swift in Sources */,
+				9FC2C3422C8DFFBA004A0405 /* WordleMiniApp.swift in Sources */,
 				9FA16BFA2C88B06400A83CC6 /* AppDelegate.swift in Sources */,
 				9FC2C33F2C8DCD6D004A0405 /* WeatherMiniApp.swift in Sources */,
+				9FC2C3462C8DFFF3004A0405 /* BoardViewController.swift in Sources */,
 				9FC2C3272C8B42C5004A0405 /* AppCell.swift in Sources */,
 				9FA16BFC2C88B06400A83CC6 /* SceneDelegate.swift in Sources */,
 				9FC2C33D2C8DC89E004A0405 /* WeatherModel.swift in Sources */,

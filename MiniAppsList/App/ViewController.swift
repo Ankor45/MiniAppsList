@@ -26,50 +26,56 @@ enum CellMode {
 }
 
 class ViewController: UIViewController {
-    let testMiniApp = WeatherMiniApp(city: .mos)
-    let testMiniApp2 = CryptoExchangeMiniApp(coin: .eth)
-    let testMiniApp3 = WeatherMiniApp(city: .spb)
-    let testMiniApp4 = WeatherMiniApp(city: .cup)
-    let testMiniApp5 = AppViewController()
-    let testMiniApp6 = AppViewController()
-    let testMiniApp7 = AppViewController()
-    let testMiniApp8 = AppViewController()
-    let testMiniApp9 = AppViewController()
-    let testMiniApp10 = AppViewController()
-    let testMiniApp11 = AppViewController()
-    
-    var apps = [UIViewController]()
-    
+    // MARK: - Apps
+    private let MiniApp = WordleMiniApp()
+    private let MiniApp2 = CryptoExchangeMiniApp(coin: .eth)
+    private let MiniApp3 = WeatherMiniApp(city: .mos)
+    private let MiniApp4 = WordleMiniApp()
+    private let MiniApp5 = CryptoExchangeMiniApp(coin: .btc)
+    private let MiniApp6 = WeatherMiniApp(city: .spb)
+    private let MiniApp7 = WordleMiniApp()
+    private let MiniApp8 = CryptoExchangeMiniApp(coin: .ton)
+    private let MiniApp9 = WeatherMiniApp(city: .cup)
+    private let MiniApp10 = WordleMiniApp()
+    private let MiniApp11 = CryptoExchangeMiniApp(coin: .eth)
+    // MARK: - Properties
+    private var apps = [UIViewController]()
     private let tableView = UITableView()
     private var mode: CellMode = .closed
+    private var smallViewHeight: CGFloat = 0
+    private var bigViewHeight: CGFloat = 0
     //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        apps.append(testMiniApp)
-        apps.append(testMiniApp2)
-        apps.append(testMiniApp3)
-        apps.append(testMiniApp4)
-        apps.append(testMiniApp5)
-        apps.append(testMiniApp6)
-        apps.append(testMiniApp7)
-        apps.append(testMiniApp8)
-        apps.append(testMiniApp9)
-        apps.append(testMiniApp10)
-        apps.append(testMiniApp11)
-        
+        apps.append(MiniApp)
+        apps.append(MiniApp2)
+        apps.append(MiniApp3)
+        apps.append(MiniApp4)
+        apps.append(MiniApp5)
+        apps.append(MiniApp6)
+        apps.append(MiniApp7)
+        apps.append(MiniApp8)
+        apps.append(MiniApp9)
+        apps.append(MiniApp10)
+        apps.append(MiniApp11)
         
         setupLayout()
-        
-        
+        setCellSize()
     }
     //MARK: - Methods
+    private func setCellSize() {
+        let height = self.view.frame.height
+        let width = self.view.frame.width
+        smallViewHeight = height > width ? height / 11 : width / 11
+        bigViewHeight = height > width ? height / 2 : width / 2
+    }
     @objc private func swapMode() {
         switch mode {
         case .closed:
-            tableView.rowHeight = view.bounds.height / 2
+            tableView.rowHeight = bigViewHeight
         case .open:
-            tableView.rowHeight = view.bounds.height / 11
+            tableView.rowHeight = smallViewHeight
         }
         tableView.reloadData()
         mode.toggle()
@@ -128,7 +134,7 @@ extension ViewController {
         tableView.backgroundColor = .clear
         tableView.showsVerticalScrollIndicator = false
         tableView.showsHorizontalScrollIndicator = false
-        tableView.rowHeight = view.bounds.height / 11
+        tableView.rowHeight = view.frame.height / 11
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
@@ -176,9 +182,3 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
 }
-
-#Preview {
-    UINavigationController(rootViewController: ViewController())
-}
-
-
