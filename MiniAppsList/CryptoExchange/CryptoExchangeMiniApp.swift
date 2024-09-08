@@ -13,7 +13,7 @@ enum Currency: String {
     case eur = "EUR"
 }
 
-class CryptoExchangeRate: UIViewController {
+class CryptoExchangeMiniApp: UIViewController {
     // MARK: - Properties
     let coin: Coins
     private let coinPriceLabel = UILabel()
@@ -35,11 +35,11 @@ class CryptoExchangeRate: UIViewController {
         super.viewDidLoad()
         
         fetchPrice()
-        setupLayout()
+//        setupLayout()
     }
     //MARK: - Methods
     private func fetchPrice() {
-        APICaller.shared.getCryptoPrice(for: coin) { [weak self] result in
+        APICoinbaseCaller.shared.getCryptoPrice(for: coin) { [weak self] result in
             self?.prices = result.data.rates
             DispatchQueue.main.async {
                 self?.setupLayout()
@@ -64,7 +64,7 @@ class CryptoExchangeRate: UIViewController {
 }
 
 //MARK: - Layout
-extension CryptoExchangeRate {
+extension CryptoExchangeMiniApp {
     private func setupLayout() {
         view.backgroundColor = .white
         

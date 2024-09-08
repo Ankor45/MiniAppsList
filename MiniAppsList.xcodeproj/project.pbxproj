@@ -16,9 +16,12 @@
 		9FC2C3252C8A1DBA004A0405 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3242C8A1DBA004A0405 /* AppViewController.swift */; };
 		9FC2C3272C8B42C5004A0405 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3262C8B42C5004A0405 /* AppCell.swift */; };
 		9FC2C3292C8B4B34004A0405 /* UIButton + Extended.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3282C8B4B34004A0405 /* UIButton + Extended.swift */; };
-		9FC2C32D2C8C99B9004A0405 /* CryptoExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C32C2C8C99B9004A0405 /* CryptoExchangeRate.swift */; };
-		9FC2C3302C8C9BE4004A0405 /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C32F2C8C9BE4004A0405 /* APICaller.swift */; };
-		9FC2C3322C8CA096004A0405 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3312C8CA096004A0405 /* Model.swift */; };
+		9FC2C32D2C8C99B9004A0405 /* CryptoExchangeMiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C32C2C8C99B9004A0405 /* CryptoExchangeMiniApp.swift */; };
+		9FC2C3302C8C9BE4004A0405 /* APICoinbaseCaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C32F2C8C9BE4004A0405 /* APICoinbaseCaller.swift */; };
+		9FC2C3322C8CA096004A0405 /* CoinModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C3312C8CA096004A0405 /* CoinModel.swift */; };
+		9FC2C33B2C8DC812004A0405 /* APIWeatherColler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C33A2C8DC812004A0405 /* APIWeatherColler.swift */; };
+		9FC2C33D2C8DC89E004A0405 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C33C2C8DC89E004A0405 /* WeatherModel.swift */; };
+		9FC2C33F2C8DCD6D004A0405 /* WeatherMiniApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FC2C33E2C8DCD6D004A0405 /* WeatherMiniApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +36,12 @@
 		9FC2C3242C8A1DBA004A0405 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		9FC2C3262C8B42C5004A0405 /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 		9FC2C3282C8B4B34004A0405 /* UIButton + Extended.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton + Extended.swift"; sourceTree = "<group>"; };
-		9FC2C32C2C8C99B9004A0405 /* CryptoExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoExchangeRate.swift; sourceTree = "<group>"; };
-		9FC2C32F2C8C9BE4004A0405 /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
-		9FC2C3312C8CA096004A0405 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		9FC2C32C2C8C99B9004A0405 /* CryptoExchangeMiniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoExchangeMiniApp.swift; sourceTree = "<group>"; };
+		9FC2C32F2C8C9BE4004A0405 /* APICoinbaseCaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICoinbaseCaller.swift; sourceTree = "<group>"; };
+		9FC2C3312C8CA096004A0405 /* CoinModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinModel.swift; sourceTree = "<group>"; };
+		9FC2C33A2C8DC812004A0405 /* APIWeatherColler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIWeatherColler.swift; sourceTree = "<group>"; };
+		9FC2C33C2C8DC89E004A0405 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		9FC2C33E2C8DCD6D004A0405 /* WeatherMiniApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherMiniApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,21 +77,22 @@
 				9FC2C3382C8D038F004A0405 /* App */,
 				9FC2C3372C8D0372004A0405 /* Resourses */,
 				9FC2C3362C8D034B004A0405 /* Views */,
-				9FC2C32E2C8C99CB004A0405 /* CryptoExchangeRate */,
+				9FC2C32E2C8C99CB004A0405 /* CryptoExchange */,
+				9FC2C3392C8DC7E7004A0405 /* WeatherMiniApp */,
 				9FC2C3242C8A1DBA004A0405 /* AppViewController.swift */,
 				9FA16C072C88B06700A83CC6 /* Info.plist */,
 			);
 			path = MiniAppsList;
 			sourceTree = "<group>";
 		};
-		9FC2C32E2C8C99CB004A0405 /* CryptoExchangeRate */ = {
+		9FC2C32E2C8C99CB004A0405 /* CryptoExchange */ = {
 			isa = PBXGroup;
 			children = (
-				9FC2C32C2C8C99B9004A0405 /* CryptoExchangeRate.swift */,
-				9FC2C32F2C8C9BE4004A0405 /* APICaller.swift */,
-				9FC2C3312C8CA096004A0405 /* Model.swift */,
+				9FC2C32C2C8C99B9004A0405 /* CryptoExchangeMiniApp.swift */,
+				9FC2C32F2C8C9BE4004A0405 /* APICoinbaseCaller.swift */,
+				9FC2C3312C8CA096004A0405 /* CoinModel.swift */,
 			);
-			path = CryptoExchangeRate;
+			path = CryptoExchange;
 			sourceTree = "<group>";
 		};
 		9FC2C3362C8D034B004A0405 /* Views */ = {
@@ -115,6 +122,16 @@
 				9FA16C022C88B06700A83CC6 /* Assets.xcassets */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		9FC2C3392C8DC7E7004A0405 /* WeatherMiniApp */ = {
+			isa = PBXGroup;
+			children = (
+				9FC2C33E2C8DCD6D004A0405 /* WeatherMiniApp.swift */,
+				9FC2C33A2C8DC812004A0405 /* APIWeatherColler.swift */,
+				9FC2C33C2C8DC89E004A0405 /* WeatherModel.swift */,
+			);
+			path = WeatherMiniApp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,12 +211,15 @@
 				9FC2C3252C8A1DBA004A0405 /* AppViewController.swift in Sources */,
 				9FA16BFE2C88B06400A83CC6 /* ViewController.swift in Sources */,
 				9FC2C3292C8B4B34004A0405 /* UIButton + Extended.swift in Sources */,
-				9FC2C32D2C8C99B9004A0405 /* CryptoExchangeRate.swift in Sources */,
-				9FC2C3302C8C9BE4004A0405 /* APICaller.swift in Sources */,
-				9FC2C3322C8CA096004A0405 /* Model.swift in Sources */,
+				9FC2C33B2C8DC812004A0405 /* APIWeatherColler.swift in Sources */,
+				9FC2C32D2C8C99B9004A0405 /* CryptoExchangeMiniApp.swift in Sources */,
+				9FC2C3302C8C9BE4004A0405 /* APICoinbaseCaller.swift in Sources */,
+				9FC2C3322C8CA096004A0405 /* CoinModel.swift in Sources */,
 				9FA16BFA2C88B06400A83CC6 /* AppDelegate.swift in Sources */,
+				9FC2C33F2C8DCD6D004A0405 /* WeatherMiniApp.swift in Sources */,
 				9FC2C3272C8B42C5004A0405 /* AppCell.swift in Sources */,
 				9FA16BFC2C88B06400A83CC6 /* SceneDelegate.swift in Sources */,
+				9FC2C33D2C8DC89E004A0405 /* WeatherModel.swift in Sources */,
 				9FC2C3212C88B3BC004A0405 /* PopUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

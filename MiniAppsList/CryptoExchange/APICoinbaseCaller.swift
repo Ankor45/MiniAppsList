@@ -12,8 +12,8 @@ enum Coins: String {
     case ton = "TON"
 }
 
-final class APICaller {
-    static let shared = APICaller()
+final class APICoinbaseCaller {
+    static let shared = APICoinbaseCaller()
     
     public func getCryptoPrice(for coun: Coins,completion: @escaping (Coin) -> Void) {
         guard let url = URL(string: "https://api.coinbase.com/v2/exchange-rates?currency=\(coun.rawValue)") else { return }

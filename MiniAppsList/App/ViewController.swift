@@ -26,10 +26,10 @@ enum CellMode {
 }
 
 class ViewController: UIViewController {
-    let testMiniApp = CryptoExchangeRate(coin: .btc)
-    let testMiniApp2 = CryptoExchangeRate(coin: .eth)
-    let testMiniApp3 = CryptoExchangeRate(coin: .ton)
-    let testMiniApp4 = AppViewController()
+    let testMiniApp = WeatherMiniApp(city: .mos)
+    let testMiniApp2 = CryptoExchangeMiniApp(coin: .eth)
+    let testMiniApp3 = WeatherMiniApp(city: .spb)
+    let testMiniApp4 = WeatherMiniApp(city: .cup)
     let testMiniApp5 = AppViewController()
     let testMiniApp6 = AppViewController()
     let testMiniApp7 = AppViewController()
